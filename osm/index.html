@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Full-screen Plugin -->
+		<link rel="stylesheet" href="css/fullscreen-img.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+				<!-- slide -->
+				<section>
+					<h1>OpenStreetMap 101</h1>
+					<h3>Make your mark on the <br>people's map of the world.</h3>
+					<p>Presentation by <a href="http://mtaylorlong.com" target="_blank">M. Taylor Long</a></p>
+					<p>February 4, 2014</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>But First, This Video...</h2>
+					<p>
+						<iframe src="//player.vimeo.com/video/9724633" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/9724633">BLANK SPACES</a> from <a href="http://vimeo.com/rajneelsingh">Rajneel Singh</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>What is OpenStreetMap?</h2>
+					<p>
+						<ul>
+							<li>Not just a map, data!</li>
+							<li>A lot more than streets...</li>
+						</ul>
+					</p>
+				</section>
+
+
+				<!-- slide -->
+				<section>
+					<h1>What does is look like?</h1>
+				</section>
+
+				<!-- slide -->
+				<section data-background="img/osm_page.png">
+					<h2><a href="http://www.openstreetmap.org/#map=12/44.9591/-93.1756" target="_blank">View Site...</a></h2>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h1>Who is using OSM?</h1>
+					<p>
+						<ul>
+							<li><a href="https://www.mapbox.com/showcase/">Mapbox</a></li>
+							<li>Foursquare</li>
+							<li>The Financial Times</li>
+							<li>The Guardian</li>
+							<li>The Wall Street Journal</li>
+							<li>NPR</li>
+							<li>The National Park Service</li>
+							<li>...and many more.</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Why OSM?</h2>
+					<p>
+						<ul>
+							<li>Work to build the best map/database</li>
+							<li>You get to use the data!</li>
+							<li>Help people around the world</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>What to Map</h2>
+					<p>
+						<ul>
+							<li>POIs</li>
+							<li>Your neighborhood or area you know</li>
+							<li>Humanitarian Projects (Haiti, Typhoon Haiyan, Ebola)</li>
+							<li>Task Sites</li>
+							<li>"Map what's on the ground"</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>OSM Data</h2>
+					<p>
+						<ul>
+							<li>Nodes, Ways, Relations</li>
+							<li><a href="http://wiki.openstreetmap.org/wiki/Map_Features#Building" target="_blank">Tags</a></li>
+							<li>Change Sets</li>
+							<li>Comments</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Where to Start</h2>
+					<p>
+						<ul>
+							<li>Create an account</li>
+							<li>Choose an editor</li>
+							<li>Select appropriate base data</li>
+							<li>Start Mapping!</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Considerations...</h2>
+					<p>
+						<ul>
+							<li>"Don't tag for the renderer"</li>
+							<li>Don't break Relations</li>
+							<li>Bulk imports are...difficult</li>
+							<li>Beware the mailing lists</li>
+							<li>Survey vs. Armchair</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Resources: Info</h2>
+					<p>
+						<ul>
+							<li>
+								<a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap.org</a>
+							</li>
+							<li>
+								<a href="http://learnosm.org/" target="_blank">LearnOSM</a>
+							</li>
+							<li>
+								<a href="http://openstreetmap.us/" target="_blank">OpenStreetMap US</a>
+							</li>
+							<li>
+								<a href="http://beamapper.com/" target="_blank">Be a Mapper</a>
+							</li>
+							<li>
+								<a href="http://wiki.openstreetmap.org/wiki/Mailing_lists" target="_blank">OSM Mailing Lists</a>
+							</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Resources: Mapping</h2>
+					<p>
+						<ul>
+							<li>
+								<a href="http://wiki.openstreetmap.org/wiki/Good_practice" target="_blank">OSM Good Practice</a>
+							</li>
+							<li>
+								<a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_blank">OSM Map Features</a>
+							</li>
+							<li>
+								<a href="https://taginfo.openstreetmap.org/" target="_blank">TagInfo</a>
+							</li>
+							<li>
+								<a href="https://help.openstreetmap.org/" target="_blank">OpenStreetMap Help</a>
+							</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Resources: Humanitarian</h2>
+					<p>
+						<ul>
+							<li>
+								<a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OSM Team (HOT)</a>
+							</li>
+							<li>
+								<a href="http://hot.openstreetmap.org/projects" target="_blank">HOT Projects</a>
+							</li>
+							<li>
+								<a href="http://tasks.hotosm.org/" target="_blank">HOT Tasking Manager</a>
+							</li>
+							<li>
+								<a href="https://wiki.openstreetmap.org/wiki/2014_West_Africa_Ebola_Response#Edit_the_Map" target="_blank">Ebola Response</a>
+							</li>
+							<li>
+								<a href="http://www.missingmaps.org/" target="_blank">Missing Maps Project</a>
+							</li>
+							<li>
+								<a href="http://mapgive.state.gov/" target="_blank">MapGive</a>
+							</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section data-background="#01a2a6">
+					<h1>Map On!</h1>
+					<p>
+						<ul>
+							<li>Map your highschool</li>
+							<li>Add to the Seward neighborhood</li>
+							<li>Focus on food-related items (farmer's markets, community gardens, food banks)</li>
+							<li>Find a Missing Maps task and check out a tile</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h3>Watch current OSM edits around the world:</h3>
+					<h2>
+						<a href="http://osmlab.github.io/show-me-the-way/">Show me the way</a>
+					</h2>
+					<p>
+						...or return to <a href="#/">the beginning</a> of this presentation...
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'lib/js/fullscreen-img.js' }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
