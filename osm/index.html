@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>OSM 101</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A GIS Brown Bag Talk, presented by U-Spatial at the University of Minnesota.">
+		<meta name="author" content="M. Taylor Long">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -44,27 +44,30 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 			
-				<!-- slide -->
+				<!-- superslide -->
 				<section>
-					<h1>OpenStreetMap 101</h1>
-					<h3>Make your mark on the <br>people's map of the world.</h3>
-					<p>Presentation by <a href="http://mtaylorlong.com" target="_blank">M. Taylor Long</a></p>
-					<p>February 4, 2014</p>
+					<!-- subslide -->
+					<section>
+						<h1>OpenStreetMap 101</h1>
+						<p>A GIS Brown Bag Talk by <a href="http://mtaylorlong.com" target="_blank">M. Taylor Long</a></p>
+						<p>February 4, 2014</p>
+					</section>
+
+					<!-- subslide -->
+					<section>
+						<h2>But First, This Video...</h2>
+						<p>
+							<iframe src="//player.vimeo.com/video/9724633" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/9724633">BLANK SPACES</a> from <a href="http://vimeo.com/rajneelsingh">Rajneel Singh</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+						</p>
+					</section>
 				</section>
 
-				<!-- slide -->
+				<!-- subslide -->
 				<section>
-					<h2>But First, This Video...</h2>
-					<p>
-						<iframe src="//player.vimeo.com/video/9724633" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/9724633">BLANK SPACES</a> from <a href="http://vimeo.com/rajneelsingh">Rajneel Singh</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-					</p>
-				</section>
-
-				<!-- slide -->
-				<section>
-					<h2>What is OpenStreetMap?</h2>
+					<h2>What is OSM?</h2>
 					<p>
 						<ul>
+							<li>Circa <a href="http://wiki.openstreetmap.org/wiki/History_of_OpenStreetMap">2004</a>: Steve Coast, UK</li>
 							<li>Not just a map, data!</li>
 							<li>A lot more than streets...</li>
 						</ul>
@@ -74,17 +77,17 @@
 
 				<!-- slide -->
 				<section>
-					<h1>What does is look like?</h1>
+					<h2>What does OSM look like?</h2>
 				</section>
 
 				<!-- slide -->
 				<section data-background="img/osm_page.png">
-					<h2><a href="http://www.openstreetmap.org/#map=12/44.9591/-93.1756" target="_blank">View Site...</a></h2>
+					<p><a href="http://www.openstreetmap.org/#map=12/44.9591/-93.1756" target="_blank">View Site...</a></p>
 				</section>
 
 				<!-- slide -->
 				<section>
-					<h1>Who is using OSM?</h1>
+					<h2>Who is using OSM?</h2>
 					<p>
 						<ul>
 							<li><a href="https://www.mapbox.com/showcase/">Mapbox</a></li>
@@ -101,12 +104,13 @@
 
 				<!-- slide -->
 				<section>
-					<h2>Why OSM?</h2>
+					<h2>Why Use OSM?</h2>
 					<p>
 						<ul>
 							<li>Work to build the best map/database</li>
 							<li>You get to use the data!</li>
-							<li>Help people around the world</li>
+							<li>Free, Open Source (<a href="http://opendatacommons.org/licenses/odbl/" target="_blank">ODbL</a>)</li>
+							<li>Help people around the world (<a href="http://hot.openstreetmap.org/" target="_blank">HOT</a>)</li>
 						</ul>
 					</p>
 				</section>
@@ -115,12 +119,11 @@
 				<section>
 					<h2>What to Map</h2>
 					<p>
+						<blockquote>Map what's on the ground</blockquote>
 						<ul>
-							<li>POIs</li>
-							<li>Your neighborhood or area you know</li>
-							<li>Humanitarian Projects (Haiti, Typhoon Haiyan, Ebola)</li>
-							<li>Task Sites</li>
-							<li>"Map what's on the ground"</li>
+							<li>Points of Interest (POI's)</li>
+							<li>Your neighborhood / area you know well</li>
+							<li>Humanitarian Projects (<a href="http://tasks.hotosm.org/" target="_blank">Tasking Manager</a>)</li>
 						</ul>
 					</p>
 				</section>
@@ -131,9 +134,9 @@
 					<p>
 						<ul>
 							<li>Nodes, Ways, Relations</li>
-							<li><a href="http://wiki.openstreetmap.org/wiki/Map_Features#Building" target="_blank">Tags</a></li>
-							<li>Change Sets</li>
-							<li>Comments</li>
+							<li class="fragment"><a href="http://wiki.openstreetmap.org/wiki/Tags" target="_blank">Tags</a> (amenity=restaurant)</li>
+							<li class="fragment">Change Sets</li>
+							<li class="fragment">Comments</li>
 						</ul>
 					</p>
 				</section>
@@ -144,9 +147,31 @@
 					<p>
 						<ul>
 							<li>Create an account</li>
-							<li>Choose an editor</li>
+							<li>Choose an editor (iD, Potlach 2, JOSM)</li>
 							<li>Select appropriate base data</li>
 							<li>Start Mapping!</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2><a href="http://www.openstreetmap.org/#map=17/44.97064/-93.24387" target="_blank">Let's Edit OSM...</a></h2>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>General Tips</h2>
+					<p>
+						<blockquote>Map what's on the ground</blockquote>
+						<ul>
+							<li>Research <a href="http://wiki.openstreetmap.org/wiki/Map_Features" target="_blank">Tags</a></li>
+							<li>Use <a href="http://wiki.openstreetmap.org/wiki/Notes">Notes</a></li>
+							<li>Talk to other users</li>
+							<li>Attend a <a href="http://wiki.openstreetmap.org/wiki/Mapping_parties">Mapping Party</a></li>
+							<li>Survey vs. Armchair</li>
+							<li>Use <a href="http://fieldpapers.org/">Field Papers</a></li>
+							<li>Learn to use <a href="https://josm.openstreetmap.de/">JOSM</a></li>
+
 						</ul>
 					</p>
 				</section>
@@ -160,14 +185,62 @@
 							<li>Don't break Relations</li>
 							<li>Bulk imports are...difficult</li>
 							<li>Beware the mailing lists</li>
-							<li>Survey vs. Armchair</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>Bias</h2>
+					<p>
+						<ul>
+							<li>Many UK and Germany Users</li>
+							<li>Reflection of participant priorities</li>
+							<li>White, Tech-Savvy Men</li>
 						</ul>
 					</p>
 				</section>
 
 				<!-- slide -->
 				<section>
-					<h2>Resources: Info</h2>
+					<h2>Completeness and Accuracy?</h2>
+					<p>Pretty darn good. <a href="http://tools.geofabrik.de/mc/#17/44.9673/-93.2433&num=4&mt0=mapnik&mt1=google-map&mt2=bing-map&mt3=bing-satellite">See for yourself...</a></p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Even Routing! (Beta)</h2>
+					<p>
+						<ul>
+							<li><a href="http://project-osrm.org/">Open Source Routing Machine</a></li>
+							<li><a href="https://mapzen.com/routing">Mapzen Routing Service</a></li>
+							<li><a href="https://www.mapbox.com/developers/api/directions/">Mapbox Directions API</a></li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Exporting Data</h2>
+					<p>
+						<ul>
+							<li>Straight from the <a href="http://www.openstreetmap.org/#map=17/44.97064/-93.24387">Editor</a></li>
+							<li><a href="https://mapzen.com/metro-extracts/">Metro Extracts</a></li>
+							<li><a href="http://planet.openstreetmap.org/">Planet OSM</a></li>
+							<li><a href="http://overpass-turbo.eu/">overpass turbo</a></li>
+							<li>ArcGIS for Desktop/QGIS (sort of)</li>
+						</ul>
+					</p>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Let's Try <a href="http://overpass-turbo.eu/">overpass turbo</a></h2>
+				</section>
+
+				<!-- slide -->
+				<section>
+					<h2>Resources:</h2>
+					<h1>More Info</h1>
 					<p>
 						<ul>
 							<li>
@@ -191,7 +264,8 @@
 
 				<!-- slide -->
 				<section>
-					<h2>Resources: Mapping</h2>
+					<h2>Resources:</h2>
+					<h1>For Mapping</h1>
 					<p>
 						<ul>
 							<li>
@@ -212,7 +286,8 @@
 
 				<!-- slide -->
 				<section>
-					<h2>Resources: Humanitarian</h2>
+					<h2>Resources:</h2>
+					<h1>Humanitarian</h1>
 					<p>
 						<ul>
 							<li>
@@ -238,27 +313,21 @@
 				</section>
 
 				<!-- slide -->
-				<section data-background="#01a2a6">
+				<section>
 					<h1>Map On!</h1>
-					<p>
-						<ul>
-							<li>Map your highschool</li>
-							<li>Add to the Seward neighborhood</li>
-							<li>Focus on food-related items (farmer's markets, community gardens, food banks)</li>
-							<li>Find a Missing Maps task and check out a tile</li>
-						</ul>
-					</p>
+					<p><a href="http://www.openstreetmap.org/#map=16/44.9711/-93.2397">Edit OSM</a> or</p>
+					<p>Watch current edits: <a href="http://osmlab.github.io/show-me-the-way/">Show me the way</a></p>
+
 				</section>
 
 				<!-- slide -->
 				<section>
-					<h3>Watch current OSM edits around the world:</h3>
-					<h2>
-						<a href="http://osmlab.github.io/show-me-the-way/">Show me the way</a>
-					</h2>
-					<p>
-						...or return to <a href="#/">the beginning</a> of this presentation...
-					</p>
+					<h1>Questions?</h1>
+					<h2>M. Taylor Long</h2>
+					<p>longx598@umn.edu</p>
+					<p><a href="https://twitter.com/mtaylorlong">@mtaylorlong</a></p>
+					<p><br></p>
+					<p><a href="#/">Return to beginning of presentation</a></p>
 				</section>
 
 			</div>
