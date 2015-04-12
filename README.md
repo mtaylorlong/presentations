@@ -1,3 +1,3 @@
 # Presentations
-Presentations given by Taylor Long
+Presentations given by Taylor Long.
 Questions? mtaylorlong@gmail.com
